@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultor de Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consultor de Clima</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Nombre de ciudad">
+            <button id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div id="weather-info" class="weather-info">
+            <h2 id="city-name">Busca una ciudad</h2>
+            <div id="temperature-section">
+                <img id="weather-icon" src="assets/wheather_icon.png" alt="Weather Icon" onerror="console.error('Imagen no cargada')">
+                <p id="temperature"></p>
+            </div>
+            <p id="description">Introduce el nombre de una ciudad</p>
+            <div class="details">
+                <div class="col">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p id="wind-speed">- km/h</p>
+                        <p>Viento</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p id="humidity">-%</p>
+                        <p>Humedad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
